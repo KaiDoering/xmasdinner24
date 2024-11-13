@@ -1,0 +1,73 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #fff;
+    color: #333;
+    margin: 0;
+    padding: 0;
+    transition: background-color 0.5s, color 0.5s;
+}
+
+body.dark-mode {
+    background-color: #333;
+    color: #fff;
+}
+
+header {
+    padding: 1rem 1rem;
+    display: flex;
+    flex-flow: row-reverse;
+}
+
+.dark-mode-switch {
+    background: transparent;
+    border-radius: .5rem;
+    border-color: #333;
+    border-width: 2px;
+    border-style: solid;
+    cursor: pointer;
+}
+
+.dark-mode .dark-mode-switch {
+    border-color: #fff;
+}
+
+.dark-mode-switch .sun {
+    width: 2rem;
+    height: 2rem;
+    display: none;
+}
+
+.dark-mode-switch .moon {
+    width: 2rem;
+    height: 2rem;
+    display: block;
+}
+
+.dark-mode .dark-mode-switch .sun {
+    display: block;
+}
+
+.dark-mode .dark-mode-switch .moon {
+    display: none;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    padding: 0 25%;
+}
+
+section {
+    margin: 1em 0;
+}
+
+h1 {
+    align-self: center;
+}
+
+h2 {
+    margin: 0;
+    padding-bottom: 1em;
+    border-bottom: 2px solid #ccc;
+}
